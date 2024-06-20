@@ -25,6 +25,9 @@ const Login = () => {
         if (result.data === "Success") {
           navigate("/home");
         }
+        else{
+          alert("Invalid Credentials")
+        }
       })
       .catch((err) => console.log(err));
   };
